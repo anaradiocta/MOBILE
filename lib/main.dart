@@ -60,6 +60,16 @@ class MyApp extends StatelessWidget {
       ],
     );
 
+    Widget textSection = Container(
+      padding: const EdgeInsets.all(32),
+      child: const Text(
+        'Paralayang di Kota Batu, Malang, menawarkan sensasi terbang di atas keindahan alam dengan pemandangan memukau. Dari ketinggian, wisatawan dapat menikmati panorama Kota Batu yang dikelilingi oleh Gunung Panderman, Arjuno, dan Kawi, serta udara sejuk khas pegunungan.\n'
+        'Destinasi ini tidak hanya cocok bagi para pecinta adrenalin, tetapi juga bagi siapa saja yang ingin merasakan pengalaman berbeda menikmati keindahan alam dari atas langit.\n\n '
+        'ANARADI OCTA LAVECHIA | 2241760007 ',
+        softWrap: true,
+      ),
+    );
+
     return MaterialApp(
       title: 'Flutter layout: ANARADI OCTA LAVECHIA - 2241760007',
       home: Scaffold(
@@ -70,6 +80,7 @@ class MyApp extends StatelessWidget {
           children: [
             titleSection,
             buttonSection, // Tambahkan buttonSection ke body
+            textSection
           ],
         ),
       ),
