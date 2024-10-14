@@ -76,15 +76,21 @@ class MyApp extends StatelessWidget {
         appBar: AppBar(
           title: const Text('Flutter layout demo'),
         ),
-        body: Column(
+        body: ListView(
           children: [
+            Image.asset(
+              'images/paralayang.jpg',
+              width: 600,
+              height: 300,
+              fit: BoxFit.cover,
+            ),
             titleSection,
             buttonSection, // Tambahkan buttonSection ke body
             textSection
           ],
         ),
-      ),
-    );
+        ),
+      );
   }
 
   Column _buildButtonColumn(Color color, IconData icon, String label) {
